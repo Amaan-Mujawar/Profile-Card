@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Profile Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .main {
+            width: 350px;
+            height: 450px;
+            background: lightgrey;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            background-image: url(./Assets/Background.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: black;
+            background-color: aliceblue;
+            width: 50px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .img {
+            background-image: url(./Assets/Photo.jpg);
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 5px solid aliceblue;
+            margin: 80px auto 20px;
+            background-size: cover;
+            background-position: center;
+        }
+        .content h2, .content h3 {
+            margin: 5px 0;
+            color: whitesmoke;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        ul li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: whitesmoke;
+        }
+        ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        ul li i {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">PRO</div>
+        <div class="img"></div>
+        <div class="content">
+            <h2>Amaan Mujawar</h2>
+            <h3>Full-Stack Web Developer</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Gokhalenagar, Pune</li>
+                <li><i class="fa-solid fa-phone"></i> +91 9876543210</li>
+                <li><i class="fa-solid fa-envelope"></i> amaan@gmail.com</li>
+                <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Amaan-Mujawar" target="_blank">GitHub</a></li>
+                <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/amaanmujawar/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
